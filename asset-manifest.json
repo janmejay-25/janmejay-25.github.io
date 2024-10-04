@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.37cfd62a.css",
+    "main.js": "/static/js/main.1fb476de.js",
+    "static/js/787.2ea5e436.chunk.js": "/static/js/787.2ea5e436.chunk.js",
+    "static/media/materialdesignicons-webfont.eot": "/static/media/materialdesignicons-webfont.d95c91e88cc28d3305af.eot",
+    "static/media/materialdesignicons-webfont.ttf?v=7.2.96": "/static/media/materialdesignicons-webfont.0207b94ccbbd5be9a50b.ttf",
+    "static/media/materialdesignicons-webfont.woff?v=7.2.96": "/static/media/materialdesignicons-webfont.2e62b6565e8fb8e62ffc.woff",
+    "static/media/corporate01.png": "/static/media/corporate01.e6f53eba0374bc9df158.png",
+    "static/media/materialdesignicons-webfont.woff2?v=7.2.96": "/static/media/materialdesignicons-webfont.66f2d337503c6bd54e84.woff2",
+    "static/media/about.jpg": "/static/media/about.40d16ecf13f167da6d46.jpg",
+    "static/media/how-it-works.avif": "/static/media/how-it-works.951e561b2af46427253d.avif",
+    "static/media/services.jpg": "/static/media/services.f9a144313f24c2b881a3.jpg",
+    "static/media/cta05.png": "/static/media/cta05.5368b81d4db158b8590f.png",
+    "static/media/blog01.jpg": "/static/media/blog01.bed34ae001333ea07e9e.jpg",
+    "static/media/build-cloud-foundation.avif": "/static/media/build-cloud-foundation.9b13403a51f23b5e3e12.avif",
+    "static/media/single01.jpg": "/static/media/single01.140644083ceb6726e5a6.jpg",
+    "static/media/02.jpg": "/static/media/02.b98e5c0bb7d12e4c5e77.jpg",
+    "static/media/comingsoon.jpg": "/static/media/comingsoon.3301c6dd7c8a0b24adbb.jpg",
+    "static/media/404.svg": "/static/media/404.897501a8224a22cfbc1ac0027b357c69.svg",
+    "static/media/01.jpg": "/static/media/01.5fa6455abf6536cb1885.jpg",
+    "static/media/exclusive-features.png": "/static/media/exclusive-features.3fd44809b89df625c44c.png",
+    "static/media/Rajesh-Kanade.png": "/static/media/Rajesh-Kanade.c60ffef8f965bf4877ca.png",
+    "static/media/Deepak.png": "/static/media/Deepak.c091f305136a5831c35a.png",
+    "static/media/Shailesh.png": "/static/media/Shailesh.d452139b7a9433632c38.png",
+    "static/media/ce-logo.png": "/static/media/ce-logo.54b97eebc9407d6ef43e.png",
+    "static/media/Idea-bridge-Logo.png": "/static/media/Idea-bridge-Logo.86da64b6ccbb1917059c.png",
+    "static/media/PlusInnovation-Logo.png": "/static/media/PlusInnovation-Logo.79e65be326af1f103256.png",
+    "index.html": "/index.html",
+    "main.37cfd62a.css.map": "/static/css/main.37cfd62a.css.map",
+    "main.1fb476de.js.map": "/static/js/main.1fb476de.js.map",
+    "787.2ea5e436.chunk.js.map": "/static/js/787.2ea5e436.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37cfd62a.css",
+    "static/js/main.1fb476de.js"
+  ]
+}
