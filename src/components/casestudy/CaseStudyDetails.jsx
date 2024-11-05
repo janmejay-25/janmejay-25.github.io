@@ -21,10 +21,8 @@ function CaseStudyDetails() {
             Go Back
           </Link>
           <div className="row justify-content-center mt-3">
-            <div className="col-lg-12">
-              <h3 className="heading text-decoration-underline mb-4">
-                {data.title}
-              </h3>
+            <div className="col-lg-12 justify-text">
+              <h3 className="heading mb-4">{data.title}</h3>
               {data.content}
             </div>
           </div>

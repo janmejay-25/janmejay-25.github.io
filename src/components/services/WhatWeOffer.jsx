@@ -20,7 +20,7 @@ function WhatWeOffer({ data }) {
           const Icon = item.icon;
           return (
             <div className="col-lg-6 mt-4 pt-2" key={index}>
-              <div className="features feature-primary feature-bg border-0 p-4 rounded shadow">
+              <div className="features feature-green feature-bg border-0 p-4 rounded shadow">
                 <div className="fea-icon rounded text-white title-dark">
                   <Icon className="icon text-white" />
                 </div>

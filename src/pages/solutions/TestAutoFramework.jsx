@@ -1,23 +1,27 @@
 import React from "react";
 import PageContainer from "../../components/container/Container";
 import ServicesHeader from "../../components/services/ServicesHeader";
+import bg1 from "../../assets/images/Banner_imgs/solution_2.jpg";
 
 function TestAutoFramework() {
   return (
     <PageContainer title={"Test Automation Framework"}>
-      <ServicesHeader title={"Test Automation Framework"} />
+      <ServicesHeader title={"Test Automation Framework"}
+      bgImage={bg1}
+      />
       <section className="section">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="shadow-lg p-5 bg-light">
+              {/* <div className=" p-5 bg-light"> */}
                 <p>
-                  <span className="fw-bold">
+                  <span className="fw-bold ">
                     Something big is coming, and it’s set to transform how you
                     approach QA automation.
-                  </span>{" "}
-                  <br />{" "}
-                  <p className="indent">
+                  </span>
+                  <br />
+                  <br />
+                  <p className="text-muted mb-0">
                     Our soon-to-launch tool will streamline your testing
                     processes, providing an all-in-one solution that simplifies
                     test creation, execution, and reporting—all without the
@@ -31,7 +35,7 @@ function TestAutoFramework() {
                     coming!
                   </p>
                 </p>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>

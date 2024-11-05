@@ -17,6 +17,8 @@
             }
             .fea-icon {
                 background-color: $value;
+                height: 55px;
+                width: 55px;
                 .icon{
                     color: $value;
                 }
@@ -50,15 +52,15 @@
         transition: all 0.5s ease;
     }
     .fea-icon {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease;
         .icon {
-            width: 24px;
-            height: 24px;
+            width: 38px;
+            height: 38px;
         }
     }
     &.feature-bg {
@@ -67,7 +69,7 @@
                 color: $white !important;
             }
             .para {
-                color: rgba($white, 0.5) !important;
+                color: $white !important;
             }
             .fea-icon {
                 background: $white !important;

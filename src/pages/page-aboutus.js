@@ -1,59 +1,38 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import bg1 from "../assets/images/bg/about.jpg";
-import about from "../assets/images/about.jpg";
-import ClientTwo from "../components/client/clientTwo";
+import React from "react";
+import bg1 from "../assets/images/Banner_imgs/aboutus.jpg";
+
+import about from "../assets/images/aboutus.jpg";
+import about2 from "../assets/images/aboutus2.png";
+import about3 from "../assets/images/aboutus3.jpeg";
+import about4 from "../assets/images/aboutus4.png";
 import "../../node_modules/react-modal-video/css/modal-video.css";
 
-import {
-  FiAirplay,
-  LiaReact,
-  FiUsers,
-  FiArrowRight,
-} from "../assets/icons/vander";
-import CountUp from "react-countup";
+import { FiAirplay, LiaReact, FiUsers } from "../assets/icons/vander";
 import PageContainer from "../components/container/Container";
 
 export default function AboutUs() {
-  const aboutData = [
-    {
-      icon: FiAirplay,
-      title: "Developing strategy",
-      desc: "It is said that song composers of the past used dummy texts as lyrics when writing to sing with the melody.",
-    },
-    {
-      icon: LiaReact,
-      title: "Blazing performance",
-      desc: "It is said that song composers of the past used dummy texts as lyrics when writing to sing with the melody.",
-    },
-    {
-      icon: FiUsers,
-      title: "Customer satisfaction",
-      desc: "It is said that song composers of the past used dummy texts as lyrics when writing to sing with the melody.",
-    },
-  ];
-  const counterData = [
-    {
-      start: "0",
-      end: "5458",
-      title: "Investment Projects",
-    },
-    {
-      start: "0",
-      end: "15",
-      title: "Years of Experience",
-    },
-    {
-      start: "0",
-      end: "54",
-      title: "Offices in the World",
-    },
-    {
-      start: "0",
-      end: "214",
-      title: "Successful Cases",
-    },
-  ];
+  // const counterData = [
+  //   {
+  //     start: "0",
+  //     end: "5458",
+  //     title: "Investment Projects",
+  //   },
+  //   {
+  //     start: "0",
+  //     end: "15",
+  //     title: "Years of Experience",
+  //   },
+  //   {
+  //     start: "0",
+  //     end: "54",
+  //     title: "Offices in the World",
+  //   },
+  //   {
+  //     start: "0",
+  //     end: "214",
+  //     title: "Successful Cases",
+  //   },
+  // ];
   return (
     <PageContainer
       title={"About Us"}
@@ -63,7 +42,7 @@ export default function AboutUs() {
     >
       <section
         className="bg-half-170 d-table w-100"
-        style={{ backgroundImage: `url(${bg1})`, backgroundPosition: "center" }}
+        style={{ backgroundImage: `url(${bg1})`, backgroundPosition: "top" }}
       >
         <div className="bg-overlay bg-gradient-overlay"></div>
         <div className="container">
@@ -84,13 +63,13 @@ export default function AboutUs() {
       <section className="section">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-5 col-md-6">
+            {/* <div className="col-lg-5 col-md-6">
               <img src={about} className="img-fluid rounded shadow" alt="" />
-            </div>
+            </div> */}
 
-            <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+            <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0 justify-text">
               <div className="section-title ms-lg-5">
-                <h4 className="title mb-3">Mission and Vision Statements:</h4>
+                <h4 className="title mb-3">Mission and Vision Statements</h4>
                 <p className="text-muted">
                   At CodeElan, we aim to empower businesses through innovative
                   technology solutions that solve complex problems and drive
@@ -114,10 +93,28 @@ export default function AboutUs() {
                 </p>
               </div>
             </div>
+            <div class="col-lg-5 col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src={about} class="img-fluid" alt="about 1" />
+                </div>
+                <div class="col-md-5 d-flex  align-items-end ">
+                  <img src={about4} class="img-fluid" alt="about 2" />
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-5 ">
+                  <img src={about3} class="img-fluid" alt="about 3" />
+                </div>
+                <div class="col-md-6">
+                  <img src={about2} class="img-fluid" alt="about 4" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="container mt-100 mt-60">
+        {/*<div className="container mt-100 mt-60">
           <div className="row justify-content-center">
             {aboutData.map((item, index) => {
               const Icon = item.icon;
@@ -149,11 +146,7 @@ export default function AboutUs() {
               );
             })}
           </div>
-        </div>
-
-        <div className=" mt-100 mt-60">
-          <ClientTwo />
-        </div>
+        </div>*/}
 
         {/* <div className="container mt-5">
           <Partners />
@@ -163,7 +156,15 @@ export default function AboutUs() {
           <Team />
         </div> */}
 
-        <div className="container mt-100 mt-60">
+        {/*
+          *
+          *
+          We can uncomment this code for client data and project delivery count in future 
+          *
+          *
+          */}
+
+        {/*<div className="container mt-100 mt-60">
           <div className="row">
             {counterData.map((item, index) => {
               return (
@@ -180,7 +181,7 @@ export default function AboutUs() {
               );
             })}
           </div>
-        </div>
+        </div>*/}
       </section>
     </PageContainer>
   );

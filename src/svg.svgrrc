@@ -1,0 +1,10 @@
+{
+  "plugins": ["@svgr/plugin-svgo", "@svgr/plugin-jsx"],
+  "svgoConfig": {
+    "plugins": [
+      {
+        "removeStyleElement": true
+      }
+    ]
+  }
+}

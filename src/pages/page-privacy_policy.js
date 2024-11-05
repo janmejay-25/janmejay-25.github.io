@@ -8,7 +8,7 @@ export default function Privacy_policy() {
       <section className="section">
         <div className="container">
           <div className="col-lg-12">
-            <div className="title-heading">
+            <div className="title-heading justify-text">
               <div className="h3 fw-bold text-decoration-underline mb-2">
                 Privacy Policy
               </div>

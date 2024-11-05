@@ -32,6 +32,7 @@ import TestAutoFramework from "./pages/solutions/TestAutoFramework";
 import CaseStudies from "./pages/insights/CaseStudies";
 import CaseStudyDetails from "./components/casestudy/CaseStudyDetails";
 import CodeOfConduct from "./pages/page-code_of_conduct";
+import ProductDemoVideos from "./pages/solutions/ProductDemoVideos";
 
 function App() {
   return (
@@ -70,7 +71,7 @@ function App() {
         <Route
           path="/services/cloud-operations"
           element={<CloudOperations />}
-        />
+        />   
 
         {/**Solutions Routes */}
         <Route path="/solutions/AI-ML" element={<AIML />} />
@@ -78,10 +79,15 @@ function App() {
           path="/solutions/test-automation-framework"
           element={<TestAutoFramework />}
         />
-
+        <Route
+          path="/solutions/product-demo-videos"
+          element={<ProductDemoVideos />}
+        />
+        
         {/** Blog Routes */}
         <Route path="/blogs" element={<BlogList />} />
         <Route path="/blog-detail/:id" element={<BlogDetailOne />} />
+
 
         {/** case studies Routes */}
         <Route path="/case-studies" element={<CaseStudies />} />

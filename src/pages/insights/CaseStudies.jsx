@@ -1,6 +1,7 @@
 import React from "react";
 import PageContainer from "../../components/container/Container";
-import bg1 from "../../assets/images/bg/blog01.jpg";
+// import bg1 from "../../assets/images/bg/blog01.jpg";
+import bg1 from "../../assets/images/Banner_imgs/case_study.jpg";
 import { caseStudies } from "../../data/caseStudies";
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
@@ -45,7 +46,7 @@ function CaseStudies() {
                     <div className="card-body content">
                       <Link
                         to={`/case-studies/${item.id}`}
-                        className="h5 title text-dark d-block mb-0"
+                        className="h5 title text-dark d-block mb-0 "
                       >
                         {item.title}
                       </Link>
@@ -61,42 +62,6 @@ function CaseStudies() {
                 </div>
               );
             })}
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <ul className="pagination justify-content-center mb-0">
-                <li className="page-item">
-                  <Link className="page-link" to="#" aria-label="Previous">
-                    <span aria-hidden="true">
-                      <i className="mdi mdi-chevron-left mdi-18px"></i>
-                    </span>
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link" to="#">
-                    1
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link active" to="#">
-                    2
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link" to="#">
-                    3
-                  </Link>
-                </li>
-                <li className="page-item">
-                  <Link className="page-link" to="#" aria-label="Next">
-                    <span aria-hidden="true">
-                      <i className="mdi mdi-chevron-right mdi-18px"></i>
-                    </span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>

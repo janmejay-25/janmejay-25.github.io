@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg1 from "../../assets/images/bg/blog01.jpg";
+// import bg1 from "../../assets/images/bg/blog01.jpg";
+import bg1 from "../../assets/images/Banner_imgs/blog.jpg";
+
 import { blogData } from "../../data/data";
 import { FiArrowRight } from "../../assets/icons/vander";
 import PageContainer from "../../components/container/Container";
@@ -27,7 +29,7 @@ export default function BlogList() {
                     Our Latest Blogs
                   </p>
                   <h5 className="heading fw-semibold page-heading text-white title-dark">
-                    Blog & News
+                    Blogs
                   </h5>
                 </div>
               </div>
@@ -83,42 +85,6 @@ export default function BlogList() {
                   </div>
                 );
               })}
-            </div>
-
-            <div className="row">
-              <div className="col-12">
-                <ul className="pagination justify-content-center mb-0">
-                  <li className="page-item">
-                    <Link className="page-link" to="#" aria-label="Previous">
-                      <span aria-hidden="true">
-                        <i className="mdi mdi-chevron-left mdi-18px"></i>
-                      </span>
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link" to="#">
-                      1
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link active" to="#">
-                      2
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link" to="#">
-                      3
-                    </Link>
-                  </li>
-                  <li className="page-item">
-                    <Link className="page-link" to="#" aria-label="Next">
-                      <span aria-hidden="true">
-                        <i className="mdi mdi-chevron-right mdi-18px"></i>
-                      </span>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>

@@ -2,55 +2,139 @@
 // _testi.scss
 //
 
-.client-testi {
-    cursor: e-resize;
+// .client-testi {
+//   cursor: e-resize;
+//   background-color: $green-700 !important;
+//   height: 400px;
+//   border-bottom-left-radius: 70px !important;
+// }
+
+.slide-card {
+  position: relative;
+  //   width: 320px;
+  height: 400px;
+  background-color: $green;
+  border-radius: 20px;
+  border-bottom-left-radius: 70px;
+  overflow: hidden;
+  cursor: e-resize;
+  //   &:hover .slide-box .slide-icon {
+  //     width: 100%;
+  //   };
+}
+
+.slide-card .slide-box {
+  position: absolute;
+  inset: 10px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.slide-card .slide-box .slide-icon {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  background-color: $green;
+  border-top-right-radius: 50%;
+  transition: 0.5s;
+}
+
+.slide-card .slide-box .slide-icon::before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  top: -30px;
+  height: 30px;
+  width: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: -9px 10px 2px 5px $green;
+}
+
+.slide-card .slide-box .slide-icon::after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  right: -29px;
+  height: 29px;
+  width: 29px;
+  border-bottom-left-radius: 30px;
+  box-shadow: -7px 10px 2px 2px $green;
+}
+
+.slide-card .slide-box .slide-icon .slide-icon-box {
+  position: absolute;
+  inset: 10px;
+  background: $white;
+  border-radius: 50%;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.slide-card .slide-box .slide-content .content-text {
+  position: absolute;
+  bottom: 31px;
+  right: 0;
+  width: 160px;
 }
 
 .tns-nav {
-    text-align: center;
-    margin-top: 10px;
-    button {
-        border-radius: 30px;
-        background: rgba($primary, 0.5) !important;
-        transition: all 0.5s ease;
-        border: none;
-        margin: 0 5px;
-        padding: 3px;
-        border: 1px solid $white;
-        &.tns-nav-active {
-            background: $primary !important;
-            padding: 3px 5px;
-            border-color: $primary;
-        }
+  text-align: center;
+  margin-top: 10px;
+  button {
+    border-radius: 30px;
+    background: rgba($green, 0.5) !important;
+    transition: all 0.5s ease;
+    border: none;
+    margin: 0 5px;
+    padding: 3px;
+    border: 1px solid $white;
+    &.tns-nav-active {
+      background: $green !important;
+      padding: 3px 5px;
+      border-color: $green;
     }
+  }
 }
 
 //tiny-single-item
 .tns-controls {
-    button[data-controls="prev"],
-    button[data-controls="next"] {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 16px;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        background: $white;
-        color: $dark;
-        border: none;
-        transition: all 0.5s ease;
-        z-index: 1;
-        box-shadow: $shadow-lg;
-        &:hover {
-            background: $primary;
-            color: $white;
-        }
+  button[data-controls="prev"],
+  button[data-controls="next"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: $white;
+    color: $dark;
+    border: none;
+    transition: all 0.5s ease;
+    z-index: 1;
+    box-shadow: $shadow-lg;
+    &:hover {
+      background: $green;
+      color: $white;
     }
-    button[data-controls="prev"] {
-        left: 0;
-    }
-    button[data-controls="next"] {
-        right: 0;
-    }
+  }
+  button[data-controls="prev"] {
+    left: 0;
+  }
+  button[data-controls="next"] {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slide-card .slide-box .slide-content .content-text {
+    font-size: 12px !important;
+    width: 100px;
+  }
 }

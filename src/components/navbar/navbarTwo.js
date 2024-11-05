@@ -317,6 +317,14 @@ export default function NavbarTwo({ navClass, manuClass, navDark }) {
                           Test Automation Framework
                         </Link>
                       </li>
+                      {/*<li>
+                        <Link
+                          to="/solutions/product-demo-videos"
+                          className="sub-menu-item"
+                        >
+                          Product Demo Videos
+                        </Link>
+                      </li>*/}
                     </ul>
                   </li>
                 </ul>
@@ -324,15 +332,13 @@ export default function NavbarTwo({ navClass, manuClass, navDark }) {
 
               <li className="has-submenu parent-parent-menu-item">
                 <Link to="#">
-                  Insights
-                  <IoIosArrowDown className="d-none d-md-inline" />
+                  Insights <IoIosArrowDown className="d-none d-md-inline" />
                 </Link>
                 <span className="menu-arrow"></span>
                 <ul className="submenu">
                   <li>
                     <ul>
                       <li>
-                        {" "}
                         <Link to="/case-studies" className="sub-menu-item">
                           Case Study
                         </Link>

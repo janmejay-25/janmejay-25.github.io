@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import image from "../../assets/images/how-it-works.avif";
 
 function HowItWorks({ data }) {
+  const [activeService, setActiveService] = useState(0);
   return (
     <>
-      <div className="row justify-content-center mt-5">
-        <div className="col-12">
-          <div className="section-title text-center pb-2">
-            <h4 className="title fw-semibold mb-3">How It Works</h4>
+      <div className="row justify-content-center my-5">
+        <div className="col-12 mt-5">
+          <div className="section-title text-center">
+            <h4 className="title fw-semibold">How It Works</h4>
           </div>
         </div>
 
-        <div className="row g-3">
+        <div className="row g-3 d-block d-md-none">
           <div className="col-lg-7">
             {data.map((item, index) => {
               return (
@@ -34,8 +35,32 @@ function HowItWorks({ data }) {
               );
             })}
           </div>
-          <div className="col-lg-5 d-flex justify-content-center align-items-center">
+          <div className="col-lg-4 d-flex justify-content-center align-items-center">
             <img src={image} alt="" className="img-fluid" />
+          </div>
+        </div>
+        <div className="row justify-content-around align-items-center d-none d-md-block">
+          <div className="col-lg-12 service-tab">
+            <ul className="list-unstyled d-flex justify-content-around">
+              {data?.map((item, index) => {
+                return (
+                  <li
+                    key={index}
+                    className={`cursor-pointer ${
+                      activeService === index ? "active" : ""
+                    }`}
+                    onClick={() => setActiveService(index)}
+                  >
+                    <h6>{item.title}</h6>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="col-lg-12 mt-5">
+            <div className=" bg-light shadow-lg rounded-4 p-4">
+              <p>{data[activeService]?.description}</p>
+            </div>
           </div>
         </div>
       </div>
